@@ -21,8 +21,9 @@ int main()
     developer_init(&Mario, "Mario", "Ihler", "ihlermario");
     developer Jonathan;
     developer_init(&Jonathan, "Jonathan", "Schulz", "SchulzJonathan");
-    // developer_group project_x;
-    // developer_group_init will be added right here.
+    developer_group project_x;
+    developer_group_init(&project_x, &Mario, &Jonathan);
+
     printoptions();
     while (1)
     {
@@ -31,16 +32,16 @@ int main()
         switch ((int)input)
         {
             case 49:  // ASCI -> 1
-                developers_print(&project_x);
+                group_print(&project_x);
                 printoptions();
                 continue;
             case 50:  // ASCI -> 2
-                developer_logo_print(&project_x);
+                group_logo_print(&project_x);
                 printoptions();
                 continue;
             case 51:  // ASCI -> 3
-                developers_print(&project_x);
-                developer_logo_print(&project_x);
+                group_print(&project_x);
+                group_logo_print(&project_x);
                 printoptions();
                 continue;
             case 52:  // ASCI -> 4
