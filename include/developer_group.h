@@ -3,6 +3,7 @@
 // defines the number of lines and columns of the struct
 #define LG 3633
 // struct contains the grouplogo and the developers
+
 typedef struct
 {
     // the grouplogo array contains the grouplogo
