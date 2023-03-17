@@ -27,6 +27,7 @@ int main()
     printoptions();
     while (1)
     {
+        // user input will be scanned and processed
         char input = 0;
         scanf("%c", &input);
         switch ((int)input)

@@ -1,15 +1,15 @@
 #ifndef DEVELOPER_GROUP_Hr789sn
 #define DEVELOPER_GROUP_Hr789sn
-// defines the number of lines and columns of the struct
+// defines the length of the array (short LG)
 #define LG 3633
-// struct contains the grouplogo and the developers
 
+// struct contains the grouplogo and the array of two pointers pointing to the developers
 typedef struct
 {
     // the grouplogo array contains the grouplogo
     char grouplogo[LG];
 
-    // the groupmember array contains both developers
+    // the groupmember array contains two pointers pointing to the developers
     developer *groupmember[2];
 
 } developer_group;

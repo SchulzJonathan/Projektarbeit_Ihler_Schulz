@@ -1,6 +1,8 @@
 #ifndef DEVELOPER_Hrz7374b
 #define DEVELOPER_Hrz7374b
+// defines the length of each character array
 #define NAME_LENGTH 15
+
 // define the struct for the single developer.
 typedef struct
 {

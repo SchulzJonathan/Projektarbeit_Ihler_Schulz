@@ -5,12 +5,15 @@
 
 void developer_group_init(developer_group *const grouppointer, developer *const member_a, developer *const member_b)
 {
+    // check pointer "grouppointer" for valid value
     if (grouppointer == NULL || member_a == NULL || member_b == NULL)
     {
+        // prints "fatal error" if value is invalid
         printf("\033[31;1mFATAL ERROR\033[0m");
     }
     else
     {
+        // the pointer array groupmember now points to the developer informations of both developers
         grouppointer->groupmember[0] = member_a;
         grouppointer->groupmember[1] = member_b;
 
@@ -96,15 +99,19 @@ void group_print(developer_group *const print_member)
 // group_logo_print prints out the grouplogo character by character with a for-loop
 void group_logo_print(developer_group *const logo)
 {
+    // check pointer "logo" for valid value
     if (logo == NULL)
     {
+        // prints "fatal error" if value is invalid
         printf("\033[31;1mFATAL ERROR\033[0m");
     }
     else
     {
+        printf("\n\n");
         for (int i = 0; i < LG; ++i)
         {
-            printf("\033[33;1m%c\033[0m", logo->grouplogo[i]);
+            printf("\033[31;1m%c\033[0m", logo->grouplogo[i]);
         }
+        printf("\n");
     }
 }

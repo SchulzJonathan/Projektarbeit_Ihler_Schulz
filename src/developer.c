@@ -5,8 +5,10 @@
 void developer_init(developer *const developerpointer, char const firstname[NAME_LENGTH],
                     char const lastname[NAME_LENGTH], char const alias[NAME_LENGTH])
 {
+    // check pointer "developerpointer" for valid value
     if (developerpointer == NULL)
     {
+        // prints "fatal error" if value is invalid
         printf("\033[31;1mFATAL ERROR\033[0m");
     }
     else
@@ -23,8 +25,10 @@ void developer_init(developer *const developerpointer, char const firstname[NAME
 // The developer_print function will print the developers' information.
 void developer_print(developer *const developerpointer)
 {
+    // check pointer "developerpointer" for valid value
     if (developerpointer == NULL)
     {
+        // prints "fatal error" if value is invalid
         printf("\033[31;1mFATAL ERROR\033[0m");
     }
     else
