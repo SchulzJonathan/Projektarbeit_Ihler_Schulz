@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 // The developer_init function will write the firstname, lastname and alias into the given struct.
-void developer_init(developer *const developerpointer, char firstname[15], char lastname[15], char alias[15])
+void developer_init(developer *const developerpointer, char const firstname[NAME_LENGTH],
+                    char const lastname[NAME_LENGTH], char const alias[NAME_LENGTH])
 {
     // The for-loop will write all the name's and alias's characters one after another into the developer struct.
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < NAME_LENGTH; i++)
     {
         developerpointer->firstname[i] = firstname[i];
         developerpointer->lastname[i] = lastname[i];
