@@ -82,7 +82,7 @@ void developer_group_init(developer_group *const grouppointer, developer *const 
 
         );
     }
-};
+}
 
 // group_print calls the developer_print of each developer to print out
 void group_print(developer_group *const print_member)
@@ -91,7 +91,7 @@ void group_print(developer_group *const print_member)
     developer_print(print_member->groupmember[0]);
     developer_print(print_member->groupmember[1]);
     printf("========================\n");
-};
+}
 
 // group_logo_print prints out the grouplogo character by character with a for-loop
 void group_logo_print(developer_group *const logo)
@@ -107,4 +107,4 @@ void group_logo_print(developer_group *const logo)
             printf("\033[33;1m%c\033[0m", logo->grouplogo[i]);
         }
     }
-};
+}

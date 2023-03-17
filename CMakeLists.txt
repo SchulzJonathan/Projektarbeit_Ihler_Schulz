@@ -5,7 +5,7 @@ project(project_x VERSION 1.0 LANGUAGES C)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
-add_compile_options(-Wall -Wextra -Werror -O0)
+add_compile_options(-Wall -Wextra -Werror -O0 -pedantic)
 
 #make a library
 add_library(developer STATIC src/developer.c src/developer_group.c)
