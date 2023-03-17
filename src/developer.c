@@ -15,6 +15,6 @@ void developer_init(developer *const developerpointer, char firstname[15], char 
 // The developer_print function will print the developers' information.
 void developer_print(developer *const developerpointer)
 {
-    printf("Developer:\nName: %s %s\n Alias: %s\n", developerpointer->firstname, developerpointer->lastname,
-           developerpointer->alias);
+    printf("Developer:\n Name:  \033[4;33m%s %s\033[0m\n Alias: %s\n", developerpointer->firstname,
+           developerpointer->lastname, developerpointer->alias);
 }
