@@ -32,24 +32,24 @@ int main()
         scanf("%c", &input);
         switch ((int)input)
         {
-            case 49:  // ASCI -> 1
+            case 49:  // ASCII -> 1
                 group_print(&project_x);
                 printoptions();
                 continue;
-            case 50:  // ASCI -> 2
+            case 50:  // ASCII -> 2
                 group_logo_print(&project_x);
                 printoptions();
                 continue;
-            case 51:  // ASCI -> 3
+            case 51:  // ASCII -> 3
                 group_print(&project_x);
                 group_logo_print(&project_x);
                 printoptions();
                 continue;
-            case 52:  // ASCI -> 4
+            case 52:  // ASCII -> 4
                 break;
-            case 10:  // this will ignore the Newline command at the end of every input.
+            case 10:  // this will ignore the newline command at the end of every input.
                 continue;
-            default:  // If input isn't valid, you. can try again!
+            default:  // If input isn't valid, you can try again!
                 printf("Input not valid. Try again: ");
                 continue;
         }
